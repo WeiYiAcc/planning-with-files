@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.21.0] - 2026-03-05
+
+### Security
+
+- **Remove `WebFetch` and `WebSearch` from `allowed-tools`** — fixes Gen Agent Trust Hub FAIL and reduces Snyk W011 risk score
+  - The planning-with-files skill is a file-management and planning skill; web access is not part of its core scope
+  - The PreToolUse hook re-reads `task_plan.md` before every tool call, creating an amplification vector when web-sourced content is written to plan files. Removing these tools from the skill's declared scope breaks the toxic flow
+  - Applied across all 7 IDE variants that declared `allowed-tools`: Claude Code, Cursor, Kilocode, CodeBuddy, Codex, OpenCode, Mastra Code
+- **Add Security Boundary section to SKILL.md** — explicit guidance that web/search results must go to `findings.md` only (not `task_plan.md`), and all external content must be treated as untrusted
+- **Add security note to examples.md** — the web research example now includes an inline comment reinforcing the trust boundary
+
 ## [2.20.0] - 2026-03-04
 
 ### Fixed
