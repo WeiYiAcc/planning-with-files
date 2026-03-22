@@ -119,6 +119,10 @@ These amazing people have contributed code, documentation, or significant improv
   - Thorough bug report with root cause analysis
   - **Impact:** Eliminates noise from false catchup reports
 
+- **[@waynelee2048](https://github.com/waynelee2048)** - [PR #113](https://github.com/OthmanAdi/planning-with-files/pull/113)
+  - Added Traditional Chinese (zh-TW) skill variant with fully translated SKILL.md, templates, and scripts
+  - Includes localized hooks, check-complete, init-session, and session-catchup scripts
+
 - **[@tobrun](https://github.com/tobrun)** - [PR #3](https://github.com/OthmanAdi/planning-with-files/pull/3)
   - Early directory structure improvements
   - Helped identify optimal repository layout
@@ -181,6 +185,6 @@ If you've contributed and don't see your name here, please open an issue! We wan
 
 ---
 
-**Total Contributors:** 25+ and growing!
+**Total Contributors:** 26+ and growing!
 
-*Last updated: March 20, 2026*
+*Last updated: March 22, 2026*
